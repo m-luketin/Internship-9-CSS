@@ -29,7 +29,7 @@ nav {
 .dropdown--box {
     display: none;
     position: absolute;
-    width: 400px;
+    width: 200px;
     height: 150px;
     border: 1px solid;
     overflow-y: scroll;
@@ -41,6 +41,20 @@ nav {
 .nav--dropdown:hover .dropdown--box{
     display: flex;    
     flex-direction: column;
+}
+
+.dropdown--header {
+    display:flex;
+    justify-content: space-between;
+}
+
+.dropdown--header img {
+    width: 12px;
+    height: 12px;
+}
+
+.nav--dropdown:hover .dropdown--header img {
+    transform: rotate(180deg);
 }
 
 .dropdown--element {
@@ -98,6 +112,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 150%;
     height: 50px;
     margin-top: 10px;
 }
